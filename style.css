@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	user-select: none;
+}
+.center-items{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar{
+	position: sticky;
+	top:0;
+	height: 59px;/*60px for nav and 1 px for border*/
+	background-color: transparent;
+	z-index: 5;
+	
+}
+.navbar ul{
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+
+
+}
+.navbar ul li {
+	display: inline-block;
+	padding: 17.5px 20px;
+	color: white;
+	font-family: 'Akshar';
+	font-size :18px;
+	transition-duration: 1s;
+	cursor: pointer;
+}
+.navbar ul li:hover{
+	border-bottom: 1px solid red;
+}
+.background{
+	margin-top: -61px;
+	display: flex;
+	height: 650px;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center;
+}
+.article{
+	text-align: center;
+}
+.article h1 {
+	padding: 0px;
+	font-size: 50px;
+	font-weight: 500px;
+	color: white;
+	font-family: 'Akshar';
+	border-right: 1px solid;
+	width:12ch;
+	margin: 0px auto;
+	white-space: nowrap;
+	overflow: hidden;
+	animation:typing 3s steps(12) 1s,blinking 0.5s infinite;
+	font-size: 40px;
+	word-spacing: 5px;
+
+}
+.background .article > p {
+	display: block;
+	max-width: 500px;
+	max-height: 70px;
+	font-size: 20px;
+	color: white;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+@media	(max-width:768px){
+
+}
+
+.btn{
+	border: none;
+	padding: 13px 18px;
+	margin-top: 10px;
+	color: white;
+	background-color: rgb(255, 84, 78);
+	transition-duration:1s;
+}
+.btn p{display: inline;}
+.btn:hover{
+	transform: scale(1.1);
+	background-color: rgb(255, 71, 64);
+}
+.section{
+	padding: 20px;
+	height: 500px;
+	background-color: #eee;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.section div{
+
+}
+.section .left{
+	
+
+}
+.section .right{
+	padding-left: 10px;
+
+}
+.section .left .img{
+	background-color: aqua;
+	height: 100%;
+	width: 100%;
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.section .left .img:hover{
+	
+}
+.section .right .info p{
+	 padding-left: 10px;
+}
+.section .right .info h1{
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 40px;
+	font-family: 'Akshar';
+	word-spacing: 5px;
+}
+@keyframes typing{
+	0%{
+		width: 0px;
+	}
+}
+@keyframes blinking{
+	50%{
+		border-color: transparent;
+	}
+}
+.foot{
+	height: 500px;	
+}
+.foot .video-screen{
+	width: 100%;
+}
